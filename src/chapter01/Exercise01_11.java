@@ -19,8 +19,8 @@ public class Exercise01_11 {
         System.out.println(deathsPerYear);
         System.out.println(immigrantsPerYear);
 
-        for (int i = 0; i < 4 ; i++) {
-            start += birthsPerYear + deathsPerYear + immigrantsPerYear;
+        for (int i = 0; i < 5 ; i++) {
+            start += birthsPerYear - deathsPerYear + immigrantsPerYear;
             System.out.println("Population = " + start);
         }
 
