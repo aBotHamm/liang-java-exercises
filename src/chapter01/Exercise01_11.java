@@ -1,7 +1,7 @@
 package chapter01;
 
 public class Exercise01_11 {
-    public static void main() {
+    public static void main(String[] args) {
         double start = 312032486;
 
         // 1 birth every 7 seconds
@@ -15,13 +15,15 @@ public class Exercise01_11 {
         double deathsPerYear = secondsInOneYear / 13.0;
         double immigrantsPerYear = secondsInOneYear / 45.0;
 
+        /*
         System.out.println(birthsPerYear);
         System.out.println(deathsPerYear);
         System.out.println(immigrantsPerYear);
+         */
 
         for (int i = 0; i < 5 ; i++) {
             start += birthsPerYear - deathsPerYear + immigrantsPerYear;
-            System.out.println("Population = " + start);
+            System.out.println("Population = " + (long) start);
             //output
         }
 
