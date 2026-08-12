@@ -13,7 +13,8 @@ public class Exercise02_21 {
         System.out.print("Enter number of years: ");
         double numYears = input.nextDouble();
 
-        double futureInvestmentValue = investmentAmount *  (Math.pow((1 + ((interestRate/12)/100)),(numYears*12)));        ;
+        double futureInvestmentValue = investmentAmount * (Math.pow((1 + ((interestRate / 12) / 100)), (numYears * 12)));
+        ;
 
         System.out.print("Future value is " + futureInvestmentValue);
 
