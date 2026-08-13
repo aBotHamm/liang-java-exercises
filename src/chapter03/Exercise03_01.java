@@ -1,7 +1,34 @@
 package chapter03;
 
+import java.util.Scanner;
+
 public class Exercise03_01 {
     public static void main(String[] args) {
-        System.out.println("This is a test");
+        Scanner input = new Scanner(System.in);
+
+        // prompt user input
+        System.out.print("Enter a, b, c: ");
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
+
+        // calculate determinant
+        double determinant = (Math.pow(b, 2) - 4 * a * c);
+
+        // set conditions for determinant
+        if (determinant > 0) {
+            double r1 = (((-b) + Math.pow(Math.pow(b, 2) - 4 * a * c, .5)) / (2 * a));
+            double r2 = (((-b) - Math.pow(Math.pow(b, 2) - 4 * a * c, .5)) / (2 * a));
+
+            System.out.println("The equation has two roots " + r1 + " and " + r2);
+
+        } else if (determinant == 0) {
+            double oneRoot = ((-b) / (2 * a));
+
+            System.out.println("The equation has one root " + oneRoot);
+
+
+        } else
+            System.out.print("The equation has no real roots");
     }
 }
