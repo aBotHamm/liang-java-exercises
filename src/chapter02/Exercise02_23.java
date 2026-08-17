@@ -19,5 +19,6 @@ public class Exercise02_23 {
 
         System.out.print("The cost of driving is $" + costOfDriving);
 
+
     }
 }
